@@ -1,8 +1,10 @@
+//! One plugin which sets everything up for the whole game.
 use crate::event;
 use crate::resource;
 use crate::system;
 use bevy::prelude::*;
 
+/// One plugin which sets everything up for the whole game.
 pub struct GamePlugin;
 
 impl Plugin for GamePlugin {

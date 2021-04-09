@@ -1,3 +1,6 @@
+//! Fields based on user input evaluation
+
+/// Fields based on user input evaluation
 #[derive(Default)]
 pub struct InputCommands {
     pub move_camera_right: bool,

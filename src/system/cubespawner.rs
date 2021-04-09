@@ -1,7 +1,9 @@
+//! Spawns cubes on CameraPosition if the is a InputEvent::SpawnCube.
 use crate::event;
 use crate::resource;
 use bevy::prelude::*;
 
+/// Spawns cubes on CameraPosition if the is a InputEvent::SpawnCube.
 pub fn cube_spawner(
     mut commands: Commands,
     mut input_events: EventReader<event::InputEvent>,

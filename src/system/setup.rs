@@ -1,7 +1,9 @@
+//! Startup system to set up the scene.
 use crate::component;
 use crate::resource;
 use bevy::prelude::*;
 
+/// Startup system to set up the scene.
 pub fn setup(
     mut commands: Commands,
     mut meshes: ResMut<Assets<Mesh>>,

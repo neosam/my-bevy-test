@@ -1,6 +1,8 @@
+//! Handles the camera movement based on InputCommand resource.
 use crate::resource;
 use bevy::prelude::*;
 
+/// Handles the camera movement based on InputCommand resource.
 pub fn camera_movement(
     mut cam_pos: ResMut<resource::CameraPosition>,
     input_commands: Res<resource::InputCommands>,

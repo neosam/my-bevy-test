@@ -1,7 +1,9 @@
+//! Set the camera based on CameraPosition resource.
 use crate::component;
 use crate::resource;
 use bevy::{prelude::*, render};
 
+/// Set the camera based on CameraPosition resource.
 pub fn camera_positioning(
     cam_pos: Res<resource::CameraPosition>,
     mut query: QuerySet<(

@@ -1,5 +1,7 @@
+//! Meshes and Materials
 use bevy::prelude::*;
 
+/// Meshes and Materials
 pub struct Data {
     pub plane_mesh: Handle<Mesh>,
     pub plane_material: Handle<StandardMaterial>,

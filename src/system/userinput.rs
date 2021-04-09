@@ -1,7 +1,9 @@
+//! Evaluate use input and set InputCommands and triggers InputEvents.
 use crate::event;
 use crate::resource;
 use bevy::prelude::*;
 
+/// Evaluate use input and set InputCommands and triggers InputEvents.
 pub fn user_input(
     mut input_commands: ResMut<resource::InputCommands>,
     mut input_events: EventWriter<event::InputEvent>,
