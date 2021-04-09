@@ -35,6 +35,14 @@ web = [
     #"bevy/x11",
 ]
 
+# Enable optimizations for dependencies (incl. Bevy), but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
+
+# Maybe also enable only a small amount of optimization for our code:
+[profile.dev]
+opt-level = 1
+
 [dependencies]
 bevy = { version = "0.5.0", default-features = false }
 bevy_webgl2 = { version = "0.5.0", optional = true }
