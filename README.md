@@ -37,4 +37,4 @@ cd web
 python2 -m SimpleHTTPServer
 ```
 
-Now you can run the game over http://localhost:8000
+Now you can run the game by open http://localhost:8000 in your browser.
