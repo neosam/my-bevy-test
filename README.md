@@ -31,7 +31,7 @@ build and wasm-bindgen-cli to generate the JavaScript bindings.
 # Build
 cargo build --target wasm32-unknown-unknown --no-default-features --features web
 # Generate JS Bindings
-wasm-bindgen --out-dir target --out-name wasm --target web --no-typescript target/wasm32-unknown-unknown/debug/my-bevy-game.wasm
+wasm-bindgen --out-dir web --out-name my_bevy_game --target web --no-typescript target/wasm32-unknown-unknown/debug/my_bevy_game.wasm
 # Share the content of the web directory over http (e.g. with python)
 cd web
 python2 -m SimpleHTTPServer
