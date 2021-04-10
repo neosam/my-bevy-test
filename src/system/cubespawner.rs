@@ -2,6 +2,7 @@
 use crate::event;
 use crate::resource;
 use bevy::prelude::*;
+use bevy_mod_picking;
 
 /// Spawns cubes on CameraPosition if the is a InputEvent::SpawnCube.
 pub fn cube_spawner(
@@ -14,12 +15,14 @@ pub fn cube_spawner(
         match event {
             &event::InputEvent::SpawnCube => {
                 let resource::CameraPosition(x, y, _) = *cam_pos;
-                commands.spawn_bundle(PbrBundle {
-                    mesh: data.cube_mesh.clone(),
-                    material: data.cube_material.clone(),
-                    transform: Transform::from_xyz(x, 0.5, y),
-                    ..Default::default()
-                });
+                commands
+                    .spawn_bundle(PbrBundle {
+                        mesh: data.cube_mesh.clone(),
+                        material: data.cube_material.clone(),
+                        transform: Transform::from_xyz(x, 0.5, y),
+                        ..Default::default()
+                    })
+                    .insert_bundle(bevy_mod_picking::PickableBundle::default());
             }
         }
     }

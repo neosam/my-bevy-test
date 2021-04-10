@@ -47,3 +47,4 @@ opt-level = 1
 bevy = { version = "0.5.0", default-features = false }
 bevy_webgl2 = { version = "0.5.0", optional = true }
 wasm-bindgen-cli = "0.2"
+bevy_mod_picking = "0.4"

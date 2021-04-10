@@ -34,6 +34,31 @@ pub fn user_input(
         input_commands.move_camera_up = false;
     }
 
+    if key_codes.just_pressed(KeyCode::W) {
+        input_commands.entity_move_up = true;
+    }
+    if key_codes.just_pressed(KeyCode::S) {
+        input_commands.entity_move_down = true;
+    }
+    if key_codes.just_pressed(KeyCode::A) {
+        input_commands.entity_move_left = true;
+    }
+    if key_codes.just_pressed(KeyCode::D) {
+        input_commands.entity_move_right = true;
+    }
+    if key_codes.just_released(KeyCode::W) {
+        input_commands.entity_move_up = false;
+    }
+    if key_codes.just_released(KeyCode::S) {
+        input_commands.entity_move_down = false;
+    }
+    if key_codes.just_released(KeyCode::A) {
+        input_commands.entity_move_left = false;
+    }
+    if key_codes.just_released(KeyCode::D) {
+        input_commands.entity_move_right = false;
+    }
+
     if key_codes.just_pressed(KeyCode::Space) {
         input_events.send(event::InputEvent::SpawnCube);
     }
