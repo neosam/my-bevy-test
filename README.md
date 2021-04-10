@@ -38,3 +38,12 @@ python2 -m SimpleHTTPServer
 ```
 
 Now you can run the game by open http://localhost:8000 in your browser.
+
+### wasm-bindgen version conflict
+The wasm-bindgen-cli must exactly match the wasm-bindgen crate which was used
+to compile the project.  If you get an error message which you need to reinstall
+wasm-bindgen-cli with the version it wants.
+
+```
+cargo install -f wasn-bindgen-cli --version whatever.it.wants
+```
