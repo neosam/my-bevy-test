@@ -96,7 +96,7 @@ pub fn generate_grid(
 }
 
 /// Startup system to set up the scene.
-pub fn setup(
+pub fn ingame_setup(
     mut commands: Commands,
     mut meshes: ResMut<Assets<Mesh>>,
     mut materials: ResMut<Assets<StandardMaterial>>,

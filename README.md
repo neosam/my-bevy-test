@@ -24,7 +24,7 @@ cargo run
 
 ## Web Build
 
-It's possible to run it in the browser.  You need wasm-unknown-unkown target
+It's possible to run it in the browser.  You need wasm-unknown-unknown target
 build and wasm-bindgen-cli to generate the JavaScript bindings.
 
 ```

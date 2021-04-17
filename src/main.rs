@@ -4,6 +4,7 @@ mod component;
 mod event;
 mod plugin;
 mod resource;
+mod state;
 mod system;
 
 fn main() {
